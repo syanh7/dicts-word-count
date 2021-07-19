@@ -15,7 +15,7 @@ def final_word_count(words):
 
 file = open('test.txt')
 text = file.read()
-word_count = Counter(re.sub('\W', ' ', text.lower()).split())
+word_count = Counter((text.lower()).split())
 
 for key, value in word_count.items():
     print(key, value)
